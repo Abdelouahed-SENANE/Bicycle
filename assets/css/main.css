@@ -1,0 +1,214 @@
+/*============================================
+
+  ---------------Project Commerce--------------
+
+==============================================*/
+
+/* General Code */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --clr-primary: #262339;
+  --clr-Secondary: #ff7400;
+  --clr-light: #fff;
+  --clr-dark: #222;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  margin-inline: auto;
+  width: 80%;
+}
+.main-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+ul,
+li,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+:focus {
+  outline: 0;
+}
+
+/* Start Landing page  */
+.landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.bg-container {
+  position: absolute;
+  right: -500px;
+  top: -350px;
+  z-index: -1;
+  width: 100%;
+}
+.bg-container img 
+{
+  width: 100%;
+}
+header 
+{
+  padding: 1rem 0;
+}
+header nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+header nav .brand {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.25rem;
+  color: var(--clr-primary);
+  font-weight: 500;
+}
+header nav .brand span {
+  color: var(--clr-Secondary);
+  margin-left: 2px;
+}
+nav .burger-menu {
+  display: none;
+}
+header nav .navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header nav .navbar-links li a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  color: var(--clr-light);
+  position: relative;
+  cursor: pointer;
+  transition: ease all 0.5s;
+}
+header nav .navbar-links li a::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--clr-Secondary);
+  transition: ease all 0.5s;
+}
+header nav .navbar-links li a:hover {
+  color: var(--clr-Secondary);
+}
+header nav .navbar-links li a:hover::before {
+  width: 85%;
+}
+header nav .search-btn 
+{
+  height: 35px;
+  width: 35px;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+header nav .search-btn  a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-light);
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+}
+.landing-body 
+{
+  padding-top: 95px;
+}
+.landing-body .row 
+{
+  display: grid;
+  grid-template-columns: repeat(2 , auto);
+}
+.landing-body .row  .txt-desc
+{
+  position: relative;
+}
+.landing-body .title {
+  width: 100px;
+  margin: auto;
+}
+.landing-body .title span
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-Secondary);
+  font-size: 1.5rem;
+  font-weight: 500;
+  height: 80px;
+  width: 80px;
+  color: var(--clr-light);
+  border-radius: 50%;
+  position: absolute;
+
+}
+.landing-body .img-banner 
+{
+  width: 850px;
+  margin-top:50px;
+  margin-left: 60px;
+}
+.landing-body .img-banner img{
+  width: 100%;
+}
+.landing-body .desc 
+{
+  padding-left: 50px;
+}
+.landing-body .desc h1 
+{
+  color: var(--clr-light);
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-top:30px ;
+}
+.landing-body .desc .pragraph
+{
+  color: var(--clr-light);
+  font-size: 1.25rem;
+  margin-block: 30px;
+}
+.landing-body .desc .main-btn
+{
+  border: 2px solid var(--clr-Secondary);
+  transition: ease all 0.5s;
+}
+.landing-body .desc .main-btn:hover
+{
+  background: var(--clr-Secondary);
+}
+/* End Landing page  */
