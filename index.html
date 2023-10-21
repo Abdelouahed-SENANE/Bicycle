@@ -18,84 +18,387 @@
     <script src="assets/js/main.js" defer></script>
   </head>
   <body>
-    <!-- Start landing -->
-    <section class="landing">
-      <div class="bg-container">
-        <img src="assets/images/home/back-landing.png" alt="bg" />
-      </div>
+    <!-- ====================== Start Header ===================== -->
+    <header>
+      <div class="container">
+        <nav class="d-flex-between">
+          <a href="#" class="brand">Velo<span>Cycle</span></a>
 
-      <!-- start Header -->
-      <header>
-        <div class="container">
-          <nav>
-            <a href="#" class="brand">VELO<span>CYCLE</span></a>
-
-            <div class="burger-menu">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-            </div>
-
-            <!-- nav-items -->
-            <div class="navbar-nav">
-              <ul class="navbar-links">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Shop</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Contact us</a>
-                </li>
-              </ul>
-            </div>
-            <button class="search-btn">
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            </button>
-          </nav>
-          <!-- End Header -->
-        </div>
-      </header>
-      <!-- End Header -->
-
-      <div class="landing-body">
-        <div class="container">
-          <!-- Start Row -->
-          <div class="row">
-            <div class="col">
-              <div class="txt-desc">
-                <div class="title">
-                  <span>Best</span>
-                </div>
-                <div class="img-banner">
-                  <img src="assets/images/home/img-1.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="desc">
-                <h1>
-                  New Model <br />
-                  Cycle
-                </h1>
-                <p class="pragraph">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content
-                </p>
-                <!-- main button -->
-                  <a href="#" class="main-btn">Shop Now</a>
-                
-              </div>
-            </div>
+          <div class="burger-menu d-flex">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
           </div>
-          <!-- End Row -->
+          <!-- ====================== navbar-links ===================== -->
+
+          <div class="navbar-items">
+            <ul class="navbar-links d-flex">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ====================== End Header ===================== -->
+    <!-- ====================== start Hero-section ===================== -->
+    <section class="hero">
+      <img src="assets/images/home/wave.png" class="shape" alt="" />
+      <div class="container">
+        <div class="row d-grid-2">
+          <div class="content_txt">
+            <h1 class="hero_title">New Model <br />Cycle</h1>
+            <p class="hero_desc m-block-25">
+              It is a long established fact that a reader will be distracted by
+              the readable content It is a long established fact that a reader
+              will be distracted by the readable content
+            </p>
+            <button class="btn-border">
+              <a href="#">shop now</a>
+            </button>
+          </div>
+          <div class="img-box">
+            <img src="assets/images/home/img-1.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
-    <!-- End LAnding  -->
+    <!-- ====================== End Hero-section ===================== -->
+
+    <!-- ====================== Start Banner ===================== -->
+    <section class="banner p-block-100">
+      <div class="container">
+        <div class="scroll d-flex">
+          <div class="arrow left">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="row d-grid-3 gap-20">
+            <div class="col">
+              <div class="card_body">
+                <img src="assets/images/home/category-1.png" class="bg-img" />
+                <p class="text">PERSONAL & CUSTOMIZE</p>
+                <button class="btn-border">
+                  <a href="#">shop now</a>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_body">
+                <img src="assets/images/home/category-2.png" class="bg-img" />
+                <p class="text">BICYCLE SPARE PARTS</p>
+                <button class="btn-border">
+                  <a href="#">shop now</a>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_body">
+                <img src="assets/images/home/category-3.png" class="bg-img" />
+                <p class="text">GEARS & UPGRADES</p>
+                <button class="btn-border">
+                  <a href="#">shop now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="arrow left">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================== End Banner ===================== -->
+    <!-- ====================== Start Find-section ============== -->
+    <section class="find_section">
+      <div class="container">
+        <div class="find_body">
+          <h2 class="find_title">FIND YOUR DREAM BIKE</h2>
+          <div class="row m-block-25 d-flex gap-20 align-center">
+            <div class="col select">
+              <div class="select_container">
+                <select name="" id="type">
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                </select>
+              </div>
+            </div>
+            <div class="col select">
+              <div class="select_container">
+                <select name="" id="type">
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                </select>
+              </div>
+            </div>
+            <div class="col select">
+              <div class="select_container">
+                <select name="" id="type">
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Ok</option>
+                </select>
+              </div>
+            </div>
+            <div class="col button">
+              <button class="btn-border">
+                <a href="#">Rechercher</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================== End Find-section ============== -->
+    <!-- ====================== Start News-Section ============== -->
+    <section class="news_section p-block-50">
+      <div class="container">
+        <h2 class="title-1">FROM THE NEWS</h2>
+        <div class="news_content p-block-50">
+          <div class="row d-grid-3 gap-30">
+            <div class="col">
+              <div class="body_card">
+                <img src="assets/images/home/news01.jpg" alt="image" />
+                <div class="text">
+                  <h3>Doloremque Laudantium, Totam Rem Aperiam.</h3>
+                  <div class="info">
+                    <span>
+                      <i class="fa-solid fa-user"></i>
+                      By john Alex
+                    </span>
+                    <span>
+                      <i class="fa-solid fa-calendar"></i>
+                      May , 2023
+                    </span>
+                  </div>
+                  <p class="desc">
+                    Sed ut perspiciatis unde omnis iste natus sit voluptatem
+                    accusantium doloremque lauda ntium, totam rem aperiam,
+                    eaque.
+                  </p>
+                  <button class="news-btn">
+                    <a href="#">read more</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="body_card">
+                <img src="assets/images/home/news02.jpg" alt="image" />
+                <div class="text">
+                  <h3>Doloremque Laudantium, Totam Rem Aperiam.</h3>
+                  <div class="info">
+                    <span>
+                      <i class="fa-solid fa-user"></i>
+                      By john Alex
+                    </span>
+                    <span>
+                      <i class="fa-solid fa-calendar"></i>
+                      May , 2023
+                    </span>
+                  </div>
+                  <p class="desc">
+                    Sed ut perspiciatis unde omnis iste natus sit voluptatem
+                    accusantium doloremque lauda ntium, totam rem aperiam,
+                    eaque.
+                  </p>
+                  <button class="news-btn">
+                    <a href="#">read more</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="body_card">
+                <img src="assets/images/home/news03.jpg" alt="image" />
+                <div class="text">
+                  <h3>Doloremque Laudantium, Totam Rem Aperiam.</h3>
+                  <div class="info">
+                    <span>
+                      <i class="fa-solid fa-user"></i>
+                      By john Alex
+                    </span>
+                    <span>
+                      <i class="fa-solid fa-calendar"></i>
+                      May , 2023
+                    </span>
+                  </div>
+                  <p class="desc">
+                    Sed ut perspiciatis unde omnis iste natus sit voluptatem
+                    accusantium doloremque lauda ntium, totam rem aperiam,
+                    eaque.
+                  </p>
+                  <button class="news-btn">
+                    <a href="#">read more</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_container">
+            <button class="btn-border view_btn">
+              <a href="#">view more</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================== End News-Section ============== -->
+    <!-- ====================== Start  Brands-Section ============== -->
+
+    <div class="brans_content">
+      <div class="container">
+        <ul class="brands d-flex justify-center">
+          <li class="brand">
+            <img src="assets/images/home/logo01.png" alt="" />
+          </li>
+          <li class="brand">
+            <img src="assets/images/home/logo02 (1).png" alt="" />
+          </li>
+          <li class="brand">
+            <img src="assets/images/home/logo03.png" alt="" />
+          </li>
+          <li class="brand">
+            <img src="assets/images/home/logo04.png" alt="" />
+          </li>
+          <li class="brand">
+            <img src="assets/images/home/logo05.png" alt="" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ====================== End Brands-Section ============== -->
+    <!-- ====================== Start pub-Section ============== -->
+    <div class="pubs_wrapper p-block-50">
+      <div class="overlay"></div>
+      <div class="shape">
+        <img src="assets/images/home/shape-1.png" alt="">
+      </div>
+      <div class="container">
+        <div class="row d-grid-2">
+          <div class="col">
+            <div class="txt_desc">
+              <h2 class="pub_title">ROAD BIKE - ZERO</h2>
+              <p class="desc">
+                lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua.
+              </p>
+              <ul>
+                <li>Frame Size : 17</li>
+                <li>Number Of Speed : 7</li>
+                <li>Country registration :  17  </li>
+              </ul>
+              <button class="btn-full">
+                <a href="#">view more</a>
+              </button>
+            </div>
+
+          </div>
+          <div class="col">
+            <img src="assets/images/home/ebicycle.png" >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====================== End pub-Section ============== -->
+    <!-- ====================== Start Sales-Section ========= -->
+    <section class="sales p-block-100">
+      <div class="container">
+        <h2 class="title-1">
+          top sales
+        </h2>
+        <div class="sales_content p-block-50">
+          <div class="row d-grid-4 gap-20">
+            <div class="col">
+              <div class="card_body">
+                <div class="img_box">
+                  <img src="assets/images/home/09.jpg" alt="">
+                </div>
+                <div class="txt_desc">
+                  <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                  <p>$1.595</p>
+                  <span>$2.495</span>
+                  <div class="btn-container">
+                    <button class="btn-border">
+                      <a href="#">Shop now</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_body">
+                <div class="img_box">
+                  <img src="assets/images/home/10.jpg" alt="">
+                </div>
+                <div class="txt_desc">
+                  <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                  <p>$1.595</p>
+                  <span>$2.495</span>
+                  <div class="btn-container">
+                    <button class="btn-border">
+                      <a href="#">Shop now</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_body">
+                <div class="img_box">
+                  <img src="assets/images/home/11.jpg" alt="">
+                </div>
+                <div class="txt_desc">
+                  <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                  <p>$1.595</p>
+                  <span>$2.495</span>
+                  <div class="btn-container">
+                    <button class="btn-border">
+                      <a href="#">Shop now</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_body">
+                <div class="img_box">
+                  <img src="assets/images/home/12.jpg" alt="">
+                </div>
+                <div class="txt_desc">
+                  <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                  <p>$1.595</p>
+                  <span>$2.495</span>
+                  <div class="btn-container">
+                    <button class="btn-border">
+                      <a href="#">Shop now</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- ====================== End Sales-Section ========= -->
   </body>
 </html>
