@@ -16,6 +16,13 @@
 
     <!-- Declaration JS File -->
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/responsive.js" defer></script>
+    
+    <style id="style">
+
+    </style>
+
+
   </head>
   <body>
     <!-- ====================== Start Header ===================== -->
@@ -24,7 +31,7 @@
         <nav class="d-flex-between">
           <a href="#" class="brand">Velo<span>Cycle</span></a>
 
-          <div class="burger-menu d-flex">
+          <div class="burger-menu">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
@@ -121,34 +128,35 @@
           <div class="row m-block-25 d-flex gap-20 align-center">
             <div class="col select">
               <div class="select_container">
+                <span class="current"></span>
                 <select name="" id="type">
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Mountain bike</option>
+                  <option value="HEllo">Hybrid/Comfort Bike</option>
+                  <option value="HEllo">Cyclocross Bike</option>
+                  <option value="HEllo">BMX/Trick Bike</option>
+                  <option value="HEllo">Road Bike</option>
                 </select>
               </div>
             </div>
             <div class="col select">
               <div class="select_container">
                 <select name="" id="type">
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">20</option>
+                  <option value="HEllo">24</option>
+                  <option value="HEllo">26</option>
+                  <option value="HEllo">27</option>
+                  <option value="HEllo">27.5</option>
                 </select>
               </div>
             </div>
             <div class="col select">
               <div class="select_container">
                 <select name="" id="type">
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
-                  <option value="HEllo">Ok</option>
+                  <option value="HEllo">Pinarello</option>
+                  <option value="HEllo">Eddy Merckx</option>
+                  <option value="HEllo">Giant</option>
+                  <option value="HEllo">Trek</option>
+                  <option value="HEllo">BMC</option>
                 </select>
               </div>
             </div>
@@ -444,7 +452,7 @@
       <div class="container">
         <h4 class="newsletter_title">JOIN OUR MAILLING LISTS</h4>
         <p class="desc">Maecenas consequat ex id lobortis venenatis. 
-          Mauris id erat enim. Morbi dolor dolor, auctor tincidunt lorem.</p>
+          Mauris id erat enim. Morbi dolor dolor, auctor tincidunt lorem.auctor tincidunt lorem.</p>
           <div class="search_box d-flex">
             <div class="input_box">
                 <i class="fa-solid fa-envelope"></i>
@@ -459,7 +467,7 @@
         <!-- ====================== End newsletter-Section ========= -->
     <!-- =========IMAGES =========== -->
     <section class="images">
-      <div class="row d-flex">
+      <div class="row d-grid-5">
         <div class="col">
 
             <img src="assets/images/home/insta01.jpg" alt="">
@@ -549,14 +557,14 @@
                 <ul class="address">
                   <li>
                     Home
-                  </li>
-                    About us
-                  </li>
                   <li>
                     Shop
                   </li>
                   <li>
                     Contact us
+                  </li>
+                  <li>
+                    About us
                   </li>
                   <li>
                     FAQ
@@ -584,16 +592,6 @@
     <div class="copyright">
       <p>© 2023 All Rights Reserved. By Abdelouahed SENANE</p>
     </div>
-
-
-
-
-
-
-
-
-
-
     <!-- ====================== Footer=================== -->
   </body>
 </html>
