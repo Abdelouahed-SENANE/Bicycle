@@ -1,21 +1,17 @@
-let burgerMenu = document.querySelector(".burger-menu");
-let navLinks = document.querySelector(".navbar-items");
-let getStyle = document.querySelector("#style");
+
 let xsMedia = window.matchMedia("(max-width : 575px)");
 let smMedia = window.matchMedia("(max-width : 767px)");
 let mdMedia = window.matchMedia("(max-width : 991px)");
 let lgMedia = window.matchMedia("(max-width : 1999px)");
 
+
 document.addEventListener("DOMContentLoaded", responsive);
 
-// Responsive Function
+// ==================================================================== Responsive JS ===========================================================
 function responsive() {
   //=========== Start Media Max[575px]================
   if (xsMedia.matches) {
     getStyle.innerHTML += `
-    .navbar-items {
-      display: none;
-    }
     .search {
       display: none;
     }
@@ -62,6 +58,9 @@ function responsive() {
     .find_section{
       margin-bottom : 400px;
     }
+    .news_section .container {
+      padding : 0px 20px;
+    }
     .find_section .row {
       flex-wrap: wrap;
     }
@@ -98,7 +97,9 @@ function responsive() {
     .pubs_wrapper img {
       display : none;
     }
-
+    .sales .container {
+      padding : 0px 25px;
+    }
     .sales .row {
       grid-template-columns: repeat(1, minmax(250px, auto));
 
@@ -153,8 +154,56 @@ function responsive() {
       font-size: 1rem;
     }
 
-
-
+    /*---------------------bureger menu--------------- */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 222;
+      background: #fff;
+      width:100%;
+      padding : 10px 0;
+      box-shadow: rgba(33, 35, 38, 0.15) 0px 10px 10px -10px;
+    }
+    nav .navbar-items {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      position: fixed;
+      top: 79px;
+      left: 0;
+      z-index: 22;
+      background: #fff;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: ease all 0.5s;
+  
+    }
+    .navbar-items.collapse {
+      height: 100vh;
+    }
+    .navbar-items  li {
+      margin-block: 0.75rem;
+    }
+  
+    .burger-menu.collapse span:nth-child(2) {
+      opacity: 0;
+    }
+    .burger-menu.collapse span:nth-child(1) {
+    
+      transform: translateY(6px) rotate(45deg);
+    }
+    .burger-menu.collapse span:nth-child(3) {
+    
+      transform:translateY(-12px) rotate(-45deg);
+    }
+    nav {
+      position: relative;
+    }
+    .navbar-items  li a:hover::before {
+      width: 0;
+    }
 
 
 
@@ -164,9 +213,6 @@ function responsive() {
   } // ======== Media MAX-575 ===========
   else if (smMedia.matches) {
     getStyle.innerHTML += `
-    .navbar-items {
-      display: none;
-    }
     .search {
       display: none;
     }
@@ -176,9 +222,7 @@ function responsive() {
     `;
   } else if (mdMedia.matches) {
     getStyle.innerHTML += `
-    .navbar-items {
-      display: none;
-    }
+
     .search {
       display: none;
     }
@@ -188,9 +232,7 @@ function responsive() {
     `;
   } else if (lgMedia.matches) {
     getStyle.innerHTML += `
-    .navbar-items {
-      display: block;
-    }
+
     .search {
       display: block;
     }
@@ -200,3 +242,4 @@ function responsive() {
     `;
   }
 }
+

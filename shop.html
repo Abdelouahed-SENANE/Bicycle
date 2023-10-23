@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VeloCycle</title>
+    <!-- Declaration Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet" />
+    <!-- Awesome Icons -->
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <!-- Declaration File css  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- Declaration JS File -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/responsive.js" defer></script>
+
+    <style id="style"></style>
+  </head>
+  <body>
+    <!-- ====================== Start Header ===================== -->
+    <header>
+      <div class="container">
+        <nav class="d-flex-between">
+          <a href="#" class="brand">Velo<span>Cycle</span></a>
+
+          <!-- ====================== navbar-links ===================== -->
+          <ul class="navbar-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <div class="burger-menu" id="burgerMenu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+<!-- ============================= HEADER ========================= -->
+    <div class="main_title">
+      <h1 class="title">shop</h1>
+      <p>home / shop</p>
+    </div>
+
+    <section class="shop p-block-100">
+      <div class="container">
+<!-- =======================Display Filter ===================== -->
+
+        <div class="main_section">
+<!-- =========== SIDEBAR ============== -->
+          <div class="sidebar">
+            <h4 class="sidebar_title">cart</h4>
+            <p>No products in the card</p>
+            <h4 class="sidebar_title">price ($)</h4>
+            <div class="slider">
+              <div class="progress"></div>
+            </div>
+            <div class="range_input">
+              <input
+                type="range"
+                class="min_range"
+                min="0"
+                max="10000"
+                value="0" />
+              <input
+                type="range"
+                class="max_range"
+                min="0"
+                max="10000"
+                value="4500" />
+            </div>
+            <div class="price_input">
+              <div class="field">
+                <input type="number" class="min_value" value="1" />
+              </div>
+              <div class="separator">
+                <span></span>
+              </div>
+              <div class="field">
+                <input type="number" class="max_value" value="4500" />
+              </div>
+            </div>
+            <!-- =============== List bikes ================== -->
+            <div class="bikes">
+              <h4 class="sidebar_title">Bikes</h4>
+              <ul class="list_bikes">
+                <li>
+                  <input type="checkbox" id="road" />
+                  <label for="road">Road bike</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="mountain" />
+                  <label for="mountain">Mountain Bike</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="bmx" />
+                  <label for="bmx">BMX Bike</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="city" />
+                  <label for="city">City Bike</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="Kids" />
+                  <label for="Kids">Kids Bike</label>
+                </li>
+              </ul>
+            </div>
+            <!-- =============== Colors Bikes ================== -->
+            <div class="colors">
+              <h4 class="sidebar_title">Color</h4>
+              <ul class="list_color">
+                <li class="color_1"></li>
+                <li class="color_2"></li>
+                <li class="color_3"></li>
+                <li class="color_4"></li>
+                <li class="color_5"></li>
+                <li class="color_6"></li>
+                <li class="color_7"></li>
+                <li class="color_8"></li>
+              </ul>
+            </div>
+            <!-- ========== GENRDER ================= -->
+            <div class="bikes">
+              <h4 class="sidebar_title">gender</h4>
+              <ul class="list_bikes">
+                <li>
+                  <input type="checkbox" id="men" />
+                  <label for="men">Men’s</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="women" />
+                  <label for="women">Women’s</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="kids" />
+                  <label for="kids">BMX Bike</label>
+                </li>
+              </ul>
+            </div>
+            <!-- ============== BRANDS ================= -->
+            <div class="bikes">
+              <h4 class="sidebar_title">brands</h4>
+              <ul class="list_bikes">
+                <li>
+                  <input type="checkbox" id="focus" />
+                  <label for="focus">Focus</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="radon" />
+                  <label for="radon">Radon</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="cube" />
+                  <label for="cube">Cube</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="cruzze" />
+                  <label for="cruzze">Cruzze</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="bikes" />
+                  <label for="bikes">Bikes</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+<!-- =========== Products ============== -->
+
+          <div class="products">
+                    <div class="display_filter">
+          <ul class="navigation">
+            <li>
+              <span>120 products found</span>
+            </li>
+            <li>
+              <span>Sort By:</span>
+              <a href="#">Best Selling<i class="fa-solid fa-chevron-down"></i>
+                <ul class="icons">
+                  <li><i class="fa-solid fa-table-cells"></i></li>
+                  <li><i class="fa-solid fa-border-all"></i></li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
+            <div class="row d-grid-3 ">
+              <div class="col">
+                <div class="product_card">
+                  <div class="img_box">
+                    <img src="assets/images/home/09.jpg" alt="" />
+                  </div>
+                  <div class="txt_desc">
+                    <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                    <p>$1.595</p>
+                    <span>$2.495</span>
+                    <div class="btn-container">
+                      <button class="btn-border">
+                        <a href="#">Shop now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="product_card">
+                  <div class="img_box">
+                    <img src="assets/images/home/09.jpg" alt="" />
+                  </div>
+                  <div class="txt_desc">
+                    <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                    <p>$1.595</p>
+                    <span>$2.495</span>
+                    <div class="btn-container">
+                      <button class="btn-border">
+                        <a href="#">Shop now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="product_card">
+                  <div class="img_box">
+                    <img src="assets/images/home/09.jpg" alt="" />
+                  </div>
+                  <div class="txt_desc">
+                    <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                    <p>$1.595</p>
+                    <span>$2.495</span>
+                    <div class="btn-container">
+                      <button class="btn-border">
+                        <a href="#">Shop now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="product_card">
+                  <div class="img_box">
+                    <img src="assets/images/home/09.jpg" alt="" />
+                  </div>
+                  <div class="txt_desc">
+                    <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                    <p>$1.595</p>
+                    <span>$2.495</span>
+                    <div class="btn-container">
+                      <button class="btn-border">
+                        <a href="#">Shop now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="product_card">
+                  <div class="img_box">
+                    <img src="assets/images/home/09.jpg" alt="" />
+                  </div>
+                  <div class="txt_desc">
+                    <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                    <p>$1.595</p>
+                    <span>$2.495</span>
+                    <div class="btn-container">
+                      <button class="btn-border">
+                        <a href="#">Shop now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="product_card">
+                  <div class="img_box">
+                    <img src="assets/images/home/09.jpg" alt="" />
+                  </div>
+                  <div class="txt_desc">
+                    <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                    <p>$1.595</p>
+                    <span>$2.495</span>
+                    <div class="btn-container">
+                      <button class="btn-border">
+                        <a href="#">Shop now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="product_card">
+                  <div class="img_box">
+                    <img src="assets/images/home/09.jpg" alt="" />
+                  </div>
+                  <div class="txt_desc">
+                    <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                    <p>$1.595</p>
+                    <span>$2.495</span>
+                    <div class="btn-container">
+                      <button class="btn-border">
+                        <a href="#">Shop now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="product_card">
+                  <div class="img_box">
+                    <img src="assets/images/home/09.jpg" alt="" />
+                  </div>
+                  <div class="txt_desc">
+                    <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                    <p>$1.595</p>
+                    <span>$2.495</span>
+                    <div class="btn-container">
+                      <button class="btn-border">
+                        <a href="#">Shop now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="product_card">
+                  <div class="img_box">
+                    <img src="assets/images/home/09.jpg" alt="" />
+                  </div>
+                  <div class="txt_desc">
+                    <h3>Surly Bridge Club27.5" Mountain Bike</h3>
+                    <p>$1.595</p>
+                    <span>$2.495</span>
+                    <div class="btn-container">
+                      <button class="btn-border">
+                        <a href="#">Shop now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="pagination">
+              <li>
+                <i class="fa-solid fa-chevron-left"></i>
+              </li>
+              <li class="active">
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">4</a>
+              </li>
+              <li>
+                <a href="#">5</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+              </li>
+            </ul>
+          </div>
+<!-- =========== End Products ============== -->
+        </div>
+
+      </div>
+    </section>
+  </body>
+</html>
