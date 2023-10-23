@@ -170,18 +170,18 @@ function responsive() {
       flex-direction: column;
       align-items: start;
       position: fixed;
-      top: 79px;
-      left: 0;
+      top: 55px;
+      left: 0px;
       z-index: 22;
       background: #fff;
-      width: 100%;
-      height: 0;
+      width: 0%;
+      height: 100vh;
       overflow: hidden;
       transition: ease all 0.5s;
   
     }
     .navbar-items.collapse {
-      height: 100vh;
+      width: 100%;
     }
     .navbar-items  li {
       margin-block: 0.75rem;

@@ -1,1 +1,166 @@
+/*============= Responsive Design ============ */
 
+/*========= Media For Screen 575px =========== */
+
+@media (max-width: 575px) {
+  /* ======== Responsive Shop ============== */
+
+  .shop .main_section {
+    display: grid;
+    grid-template-areas:
+      "sidebar"
+      "products";
+    gap: 20px;
+    background: #fbfbfb;
+    align-items: center;
+    padding: 20px;
+  }
+  .shop .container {
+    width: 90%;
+    padding: 0;
+    margin-inline: auto;
+  }
+  .products .row {
+    gap: 20px;
+    grid-template-columns: repeat(1, minmax(200px, auto));
+  }
+  .display_filter .navigation {
+    flex-direction: column;
+    align-items: start;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: fit-content;
+
+    margin: auto;
+  }
+  .pagination li:nth-child(6) {
+    display: none;
+  }
+  .products {
+    padding-inline: 0px;
+    grid-area: products;
+  }
+  .display_filter .navigation li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .main_title .title {
+    font-size: 3.5rem;
+    margin-top: 60px;
+  }
+  /*========== End Response page Shop ======= */
+  /*==========  Response page Contacts ======= */
+  .contacts .row {
+    grid-template-columns: repeat(1, minmax(200px, auto));
+    gap: 20px;
+  }
+
+  .social_brand {
+    margin-right: 10px;
+    width: auto;
+    padding: 0;
+    height: auto;
+    text-align: center;
+    border-bottom: 2px solid var(--clr-p);
+    border-right: 0;
+  }
+  .body_info .contact_info span {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--clr-grey);
+    margin-bottom: 2px;
+    text-align: center;
+  }
+  .social_brand i {
+    font-size: 5rem;
+    color: var(--clr-p);
+  }
+  .body_info {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .touch_body p {
+    font-size: 1.1rem;
+    color: var(--clr-grey);
+  }
+  .touch_body .touch_title {
+    font-size: 2.5rem;
+  }
+  .title-1 {
+    font-size: 2rem;
+  }
+  .forms_content .row {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .forms {
+    padding-block: 50px;
+  }
+  /*========== End Response page Contacts ====== */
+}
+
+/*========= Media For Screen 767px =========== */
+
+@media (max-width: 767px) {
+  /* ======== Responsive Shop ============== */
+
+  .shop .main_section {
+    display: grid;
+    grid-template-areas:
+      "sidebar"
+      "products";
+    gap: 20px;
+    background: #fbfbfb;
+    align-items: center;
+    padding: 20px;
+  }
+  .shop .container {
+    width: 90%;
+    padding: 0;
+    margin-inline: auto;
+  }
+  .products .row {
+    gap: 20px;
+    grid-template-columns: repeat(1, minmax(200px, auto));
+  }
+  .display_filter .navigation {
+    flex-direction: column;
+    align-items: start;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: fit-content;
+
+    margin: auto;
+  }
+  .pagination li:nth-child(6) {
+    display: none;
+  }
+  .products {
+    padding-inline: 0px;
+    grid-area: products;
+  }
+  .display_filter .navigation li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .main_title .title {
+    font-size: 3.5rem;
+    margin-top: 60px;
+  }
+  /*========== End Response page Shop ======= */
+}
