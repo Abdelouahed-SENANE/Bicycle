@@ -5,7 +5,9 @@ let navLinks = document.querySelector(".navbar-items");
 let getStyle = document.querySelector("#style");
 const getRange = document.querySelectorAll(".range_input input");
 const progress = document.querySelector(".progress")
-console.log(progress);
+const btnAccordian = document.querySelectorAll(".btn_accordian");
+const response = document.querySelectorAll('.response');
+console.log(response);
 // ============ Navbar Collapse ===============
 burgerMenu.addEventListener("click", () => {
   if (burgerMenu.classList.contains("burger-menu")) {
@@ -15,14 +17,21 @@ burgerMenu.addEventListener("click", () => {
 });
 
 // ============ Navbar Collapse ===============
+// ============ Accordian  ===============
 
-getRange.forEach((input) => {
-  input.addEventListener("input", () => {
-    let minVal = parseInt(getRange[0].value),
-      maxVal = parseInt(getRange[1].value);
-    ;
-    progress.style.left = (minVal / getRange[0].max) * 100 + "%";
-    progress.style.right =100 - (maxVal / getRange[1].max) * 100 + "%";
-    console.log(100 - (maxVal / getRange[1].max) * 100 + "%")
-  });
-});
+btnAccordian.forEach((e) => {
+  e.addEventListener('click', () => {
+      e.classList.toggle("active");
+      
+
+      })
+
+
+
+
+
+
+  })
+
+
+// ============ Accordian  ===============
