@@ -24,6 +24,7 @@ btnAccordian.forEach((e) => {
 });
 
 // ============ Accordian  ===============
+
 // ============ Validation form  ============
 
 const btnSubmit = document.getElementById("submitBtn");

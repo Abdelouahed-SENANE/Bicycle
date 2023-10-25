@@ -17,10 +17,15 @@
     <!-- Declaration JS File -->
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/responsive.js" defer></script>
+    
+    <style id="style">
 
-    <style id="style"></style>
+    </style>
+
+
   </head>
   <body>
+    
     <!-- ====================== Start Header ===================== -->
     <header>
       <div class="container">
@@ -28,17 +33,27 @@
           <a href="#" class="brand">Velo<span>Cycle</span></a>
 
           <!-- ====================== navbar-links ===================== -->
-          <ul class="navbar-items">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-          </ul>
+            <ul class="navbar-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+              <li class="dropdown_menu">
+                <a href="#" onclick="displayDropdown()">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <!--  ======== drop down menu -->
+                
+                <ul class="drop_list" id="dropdownList">
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="faq.html">Faq</a></li>
+                </ul>
+              
+              </li>
+            </ul>
           <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-
-          <div class="burger-menu" id="burgerMenu">
+          
+          <div class="burger-menu"  id="burgerMenu">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
@@ -180,6 +195,102 @@
     </section>
     
     <!-- =========== Section Contact ================ -->
+        <!-- ====================== Footer======================== -->
+        <footer >
+          <div class="container">
+            <div class="footer_content">
+              <div class="row d-grid-4">
+                <div class="col">
+                  <div class="infos_footer">
+                    <h5 class="title_footer">
+                      info
+                    </h5>
+                    <p class="brand_footer">Velo <span>Cycle</span></p>
+                    <p class="desc">
+                      necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+                    </p>
+                    <h6 class="follow_us">Follow us :</h6>
+                    <ul class="social_media">
+                      <li>
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </li>
+                      <li>
+                        <i class="fa-brands fa-twitter"></i>
+                      </li>
+                      <li>
+                        <i class="fa-brands fa-instagram"></i>
+                      </li>
+                      <li>
+                        <i class="fa-brands fa-linkedin"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="infos_footer">
+                    <h5 class="title_footer">
+                      address
+                    </h5>
+                    <ul class="address">
+                      <li>
+                        <i class="fa-solid fa-location-pin"></i>
+                        Location
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-phone"></i>
+                        Call +212 6 39 45 88 31
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        Bicycle@mail.com
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="infos_footer">
+                    <h5 class="title_footer">
+                      links
+                    </h5>
+                    <ul class="address">
+                      <li>
+                        Home
+                      <li>
+                        Shop
+                      </li>
+                      <li>
+                        Contact us
+                      </li>
+                      <li>
+                        About us
+                      </li>
+                      <li>
+                        FAQ
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="infos_footer">
+                    <h5 class="title_footer">
+                      subscribe
+                    </h5>
+                    <div class="input_box">
+                      <input type="email" id="footerEmail" placeholder="Enter your email">
+                    </div>
+                    <button class="btn-border">
+                      <a href="#">send</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="copyright">
+          <p>© 2023 All Rights Reserved. By Abdelouahed SENANE</p>
+        </div>
+        <!-- ====================== Footer=================== -->
 
     <!-- ============================= contact us ======================= -->
   </body>

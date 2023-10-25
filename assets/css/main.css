@@ -343,7 +343,8 @@ nav .navbar-items {
   max-height: 0;
   overflow: hidden;
   z-index: 22;
-  transition: ease-in-out 0.8s ;
+  transition: ease-in-out 0.8s ;background: var(--clr-light);
+  
 }
 .navbar-items .dropdown_menu .drop_list li {
   padding-block: 15px ;
@@ -353,7 +354,7 @@ nav .navbar-items {
   border-bottom: 1px solid #f0efef;
 }
 .navbar-items .dropdown_menu .drop_list.active {
-  max-height: 1000px;
+  max-height: 200px;
 }
 .navbar-items > li a:hover {
   color: var(--clr-Secondary);
@@ -794,6 +795,14 @@ footer img {
 }
 footer .desc {
   color: var(--clr-light);
+}
+.brand_footer {
+  font-size: 2rem;
+  color: var(--clr-light);
+  margin-bottom: 20px;
+}
+.brand_footer span {
+  color: var(--clr-Secondary);
 }
 .social_media {
   margin-top: 15px;
@@ -1281,12 +1290,13 @@ input[type="range"]::-webkit-slider-thumb {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 600px;
   position: relative;
   width: 100%;
 }
 .testimonials > .overlay {
   background-color: rgba(25, 35, 48, 0.9);
+
+  
 }
 .testimonials_title {
   position: relative;
