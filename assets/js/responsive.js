@@ -24,7 +24,7 @@ function responsive() {
     .hero .hero_title  {
       font-size :3rem;
       text-align : center;
-      margin-top :10px;
+      margin-top :100px;
     }
     .hero_desc {
       text-align:center;
