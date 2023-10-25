@@ -56,7 +56,7 @@
     <section class="contacts p-block-100">
       <h2 class="title-1">our info</h2>
       <div class="container">
-        <div class="row d-grid-3 gap-30">
+        <div class="row card_info d-grid-3 gap-30">
           <div class="body_info d-flex">
             <div class="social_brand">
               <i class="fa-brands fa-whatsapp"></i>
@@ -136,25 +136,31 @@
 
                 <div class="input_box">
                   <i class="fa-solid fa-user"></i>
-                  <input type="text" placeholder="Name">
+                  <input type="text" placeholder="Name" id="name">
+                  <span class="error" id="errorName"></span>
                 </div>
 
                 <div class="input_box">
-                  <i class="fa-solid fa-user"></i>
-                  <input type="text" placeholder="Email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="text" placeholder="Email" id="email">
+                  <span class="error" id="errorEmail">
+                    
+                  </span>
                 </div>
                 <div class="input_box">
-                  <i class="fa-solid fa-user"></i>
-                  <input type="text" placeholder="Email">
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="text" placeholder="Phone" id="phone">
+                  <span class="error" id="errorPhone"></span>
                 </div>
                 <div class="txt_area">
                   <i class="fa-solid fa-message"></i>
-                  <textarea placeholder="Message"></textarea>
+                  <textarea placeholder="Message" id="textArea" onkeyup="validateTextArea()"></textarea>
+                  <span class="error" id="errorTextArea"></span>
                 </div>
               </div>
               <div class="btn_container">
-                <button class="btn-border" id="submitBtn">
-                  <a href="#">submit comment</a>
+                <button class="btn-border" type="submit" id="submitBtn">
+                  submit comment
                 </button>
               </div>
             </div>
